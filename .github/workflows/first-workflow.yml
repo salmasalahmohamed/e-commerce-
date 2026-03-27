@@ -77,7 +77,7 @@ jobs:
           php artisan db:seed --class=DatabaseSeeder
 
       - name: Install Filament
-        run: composer require filament/filament:"^4.0"
+        run: composer require filament/filament --with-all-dependencies
 
       - name: Execute Feature Tests
         env:
